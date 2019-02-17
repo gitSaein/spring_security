@@ -8,6 +8,7 @@ public class schedulerTask {
 
 	@Scheduled(fixedDelay =  1000)
 	public void reportPerMinute() {
+		System.out.println("스케줄러 솰라솰라~~");
 	}
 	
 }
