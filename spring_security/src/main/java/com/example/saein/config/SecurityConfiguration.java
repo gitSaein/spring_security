@@ -1,4 +1,4 @@
-package com.example.saein.common;
+package com.example.saein.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -43,6 +43,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 			.and()
 		.formLogin()
 			.loginPage("/login")
+			.successForwardUrl("/")
 			.permitAll()
 			.and()
 		.logout()
